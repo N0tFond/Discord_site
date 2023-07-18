@@ -35,6 +35,23 @@ h1 {
   color: #9b9a9a;
 }
 
+.container__expliquations {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+
+  .expliquations__site {
+    font-size: 20px;
+    border-radius: 16px;
+    background-color: #9b9a9a;
+    padding: 1rem;
+  }
+}
+
 footer {
   width: auto;
   height: 50px;
