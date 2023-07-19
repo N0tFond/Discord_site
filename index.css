@@ -10,16 +10,22 @@ body {
   background-color: #161e20;
 }
 
-nav {
+nav,
+footer {
   width: auto;
   height: 50px;
   display: flex;
   justify-content: space-between;
   background-color: #2d343a;
   padding: 16px;
+
+  nav {
+    position: sticky;
+  }
 }
 
-.liens__pages {
+.liens__pages,
+.liens__reseaux {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -29,7 +35,7 @@ h1 {
   width: auto;
   height: auto;
   padding: 16px;
-  margin: 10px 0 10px 0;
+  margin: 5px 0 5px 0;
   display: flex;
   justify-content: center;
   font-size: 48px;
@@ -43,49 +49,33 @@ h1 {
   flex-direction: column;
   text-align: center;
   color: black;
-  margin: 1em;
-  gap: 55px;
-
-  .expliquations__site {
-    font-size: 20px;
-    border-radius: 16px;
-    background-color: #9b9a9a;
-    padding: 1rem;
-  }
-
-  .services__expliquations {
-    font-size: 20px;
-    border-radius: 16px;
-    background-color: #9b9a9a;
-    padding: 1rem;
-  }
+  margin: 8px 0 0 16px;
+  gap: 20px;
 }
 
-footer {
-  width: auto;
-  height: 50px;
+.expliquations__site,
+.services__expliquations,
+.details__expliquations {
+  font-size: 20px;
+  border-radius: 16px;
+  background-color: #9b9a9a;
+  padding: 1rem;
+}
+
+.discord,
+.github {
+  color: whitesmoke;
+  font-size: 20px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.container__details__expliquations {
+  width: 40%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  background-color: #2d343a;
-  padding: 16px;
-
-  .liens__reseaux {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-
-    .github {
-      color: whitesmoke;
-      font-size: 20px;
-      align-self: center;
-      text-decoration: none;
-    }
-
-    .discord {
-      color: whitesmoke;
-      font-size: 20px;
-      align-self: center;
-      text-decoration: none;
-    }
-  }
+  justify-content: end;
+  margin-top: 0;
+  margin-left: 54.56rem;
+  padding: 1rem;
 }
