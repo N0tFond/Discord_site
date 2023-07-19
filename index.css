@@ -49,7 +49,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   color: black;
-  margin: 8px 0 0 16px;
+  margin: 8px 0 3px 16px;
   gap: 20px;
 }
 
@@ -76,6 +76,6 @@ h1 {
   display: flex;
   justify-content: end;
   margin-top: 0;
-  margin-left: 54.56rem;
+  margin-left: 55.5rem;
   padding: 1rem;
 }
