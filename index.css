@@ -22,6 +22,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 12px;
+
   .liens__reseaux {
     display: flex;
     justify-content: space-between;
@@ -34,6 +35,12 @@ footer {
     align-self: center;
     text-decoration: none;
   }
+}
+
+footer {
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(25px);
 }
 
 h1 {
