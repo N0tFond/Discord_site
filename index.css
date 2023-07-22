@@ -7,24 +7,20 @@
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
-  background-color: #161e20;
+  background-image: url(./assets/layered-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav,
 footer {
   width: auto;
-  height: 50px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
-  background-color: #2d343a;
   padding: 16px;
-
-  nav {
-    position: sticky;
-  }
 }
 
-.liens__pages,
 .liens__reseaux {
   display: flex;
   justify-content: space-between;
@@ -34,8 +30,7 @@ footer {
 h1 {
   width: auto;
   height: auto;
-  padding: 16px;
-  margin: 5px 0 5px 0;
+  padding: 5px 0 20px 0;
   display: flex;
   justify-content: center;
   font-size: 48px;
