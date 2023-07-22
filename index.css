@@ -6,10 +6,13 @@
 }
 
 body {
+  width: auto;
+  height: 100vh;
   font-family: "Hanken Grotesk", sans-serif;
   background-image: url(./assets/layered-waves-haikei.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 nav,
@@ -18,13 +21,19 @@ footer {
   height: 55px;
   display: flex;
   justify-content: space-between;
-  padding: 16px;
-}
-
-.liens__reseaux {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  padding: 12px;
+  .liens__reseaux {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .discord,
+  .github {
+    color: whitesmoke;
+    font-size: 20px;
+    align-self: center;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -37,40 +46,41 @@ h1 {
   color: #9b9a9a;
 }
 
-.container__expliquations {
-  width: 40%;
+.container {
+  width: auto;
   height: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .expliquations {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    gap: 35px;
+    .principe__site,
+    .services__expliquations {
+      padding: 1rem;
+      font-size: 20px;
+      border-radius: 16px;
+      background-color: #ffffff05;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(25px);
+    }
+  }
+}
+
+.block__expliquations {
+  width: 65%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  color: black;
-  margin: 8px 0 3px 16px;
-  gap: 20px;
-}
-
-.expliquations__site,
-.services__expliquations,
-.details__expliquations {
-  font-size: 20px;
-  border-radius: 16px;
-  background-color: #9b9a9a;
-  padding: 1rem;
-}
-
-.discord,
-.github {
-  color: whitesmoke;
-  font-size: 20px;
-  align-self: center;
-  text-decoration: none;
-}
-
-.container__details__expliquations {
-  width: 40%;
-  height: auto;
-  display: flex;
-  justify-content: end;
-  margin-top: 0;
-  margin-left: 55.5rem;
-  padding: 1rem;
+  .details__expliquations {
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 16px;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+  }
 }
