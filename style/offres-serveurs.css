@@ -17,37 +17,19 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  .expliquations {
-    width: 65%;
+  .container__offres {
     display: flex;
-    flex-direction: column;
-    padding-right: 5rem;
-    gap: 35px;
-
-    .principe__site,
-    .services__expliquations {
-      padding: 1rem;
-      font-size: 20px;
-      border: 0.5px solid white;
-      border-radius: 16px;
-      background-color: #ffffff05;
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(20px);
-    }
+    flex-direction: wrap;
+    padding: 5rem;
+    gap: 20px;
   }
-}
-
-.block__expliquations {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  .details__expliquations,
-  .details__offres {
+  .offre__simple,
+  .offre__complete,
+  .offre__premium {
     padding: 1rem;
     font-size: 20px;
-    border: 0.5px solid white;
     border-radius: 16px;
+    border: 1px solid white;
     background-color: #ffffff05;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(25px);
@@ -55,9 +37,11 @@ h1 {
 }
 
 p {
-  margin: 5px;
+  padding: 1rem;
 }
-span {
+
+span,
+em {
   color: rgb(7, 241, 183);
   text-decoration: underline;
   text-underline-offset: 3px;

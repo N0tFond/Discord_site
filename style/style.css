@@ -31,11 +31,15 @@ footer {
   }
   .discord,
   .github,
-  .offres {
+  .offres,
+  .accueil,
+  .offres__bots__page,
+  .offres__serveurs__page {
     color: whitesmoke;
     font-size: 20px;
     align-self: center;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
 }
 
