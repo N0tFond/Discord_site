@@ -22,25 +22,50 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 12px;
+}
 
-  .liens__reseaux,
-  .liens__pages {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .discord,
-  .github,
-  .offres,
-  .accueil,
-  .offres__bots__page,
-  .offres__serveurs__page {
-    color: whitesmoke;
-    font-size: 20px;
-    align-self: center;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
+.liens__reseaux,
+.liens__pages {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.discord,
+.github,
+.accueil,
+.offres__bots__page,
+.offres__serveurs__page {
+  color: whitesmoke;
+  font-size: 20px;
+  align-self: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.accueil:hover {
+  color: rgb(7, 233, 241);
+  text-shadow: 0 0 50px white;
+}
+
+.discord:hover {
+  color: rgb(7, 81, 241);
+  text-shadow: 0 0 15px white;
+}
+
+.github:hover {
+  color: rgb(7, 81, 241);
+  text-shadow: 0 0 15px white;
+}
+
+.offres__bots__page:hover {
+  color: rgb(7, 241, 183);
+  text-shadow: 0 0 10px white;
+}
+
+.offres__serveurs__page:hover {
+  color: rgb(7, 241, 183);
+  text-shadow: 0 0 10px white;
 }
 
 footer {
