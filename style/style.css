@@ -18,7 +18,7 @@ body {
 nav,
 footer {
   width: auto;
-  height: 55px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   padding: 12px;
