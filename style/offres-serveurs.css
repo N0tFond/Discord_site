@@ -29,11 +29,11 @@ h4 {
   align-items: center;
 }
 
-.container__offres {
+.container__offres__serveurs {
   display: flex;
   flex-direction: wrap;
   padding: 5rem;
-  gap: 20px;
+  gap: 25px;
 }
 
 .offre__simple,
