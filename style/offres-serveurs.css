@@ -22,7 +22,7 @@ h4 {
 
 .container {
   width: auto;
-  height: 60.5vh;
+  height: 60vh;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -39,6 +39,7 @@ h4 {
 .offre__simple,
 .offre__complete,
 .offre__premium {
+  height: min-content;
   padding: 1rem;
   font-size: 20px;
   border-radius: 16px;

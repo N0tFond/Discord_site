@@ -22,7 +22,7 @@ h4 {
 
 .container {
   width: auto;
-  height: auto;
+  height: 66vh;
   display: flex;
   justify-content: center;
   align-items: center;

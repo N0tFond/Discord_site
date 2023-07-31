@@ -1,5 +1,4 @@
 h1 {
-  width: auto;
   height: auto;
   padding: 5px 0 20px 0;
   display: flex;
@@ -14,25 +13,32 @@ h1:hover {
   color: whitesmoke;
 }
 
+p {
+  margin: 5px;
+}
+
+span {
+  color: rgb(7, 241, 183);
+}
+
 .container {
   width: auto;
-  height: 59.5vh;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 62vh;
+  padding: 0.5rem;
+  display: grid;
 }
 
 .expliquations {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  padding-right: 5rem;
-  gap: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 10px;
 }
 
 .principe__site,
-.services__expliquations {
+.services__expliquations,
+.details__expliquations,
+.details__offres {
   padding: 1rem;
   font-size: 20px;
   border: 0.5px solid white;
@@ -42,28 +48,24 @@ h1:hover {
   -webkit-backdrop-filter: blur(20px);
 }
 
-.block__expliquations {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
+.principe__site {
+  grid-column: 1/55;
+  grid-row: 1/3;
+}
+.principe__site :nth-child(3) {
+  padding-top: 35px;
 }
 
-.details__expliquations,
+.services__expliquations {
+  grid-column: 55/120;
+  grid-row: 1/3;
+}
+
+.details__expliquations {
+  grid-column: 1/75;
+  grid-row: 3/3;
+}
+
 .details__offres {
-  padding: 1rem;
-  font-size: 20px;
-  border: 0.5px solid white;
-  border-radius: 16px;
-  background-color: #ffffff05;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(25px);
-}
-
-p {
-  margin: 5px;
-}
-
-span {
-  color: rgb(7, 241, 183);
+  grid-column: 75/120;
 }
